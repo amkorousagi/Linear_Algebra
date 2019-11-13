@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LinearAlgebraComputer</string>
+    <string name="hint1_11">hint</string>
+    <string name="linear_algebra">this is linear algebra image</string>
+    <string name="compute">COMPUTE</string>
+    <string name="stored_file">PAST COMPUTE</string>
+    <string name="title">Linear Algebra</string>
+    <string name="quit">QUIT</string>
+    <string name="kinds_compute">select operation you want to.</string>
+    <string name="compute_algorithm">select algorithm you use for computing.</string>
+    <string name="is_step_visible">do you want to look each step?</string>
+    <string name="next">next</string>
+    <string name="done">done</string>
+</resources>
