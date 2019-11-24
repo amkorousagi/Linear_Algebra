@@ -91,7 +91,9 @@ public class ComputeActivity extends AppCompatActivity {
         button_next.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(),InputActivity.class);
+                //Intent intent = new Intent(getApplicationContext(), InputActivity_mult.class);
+                //Intent intent = new Intent(getApplicationContext(), InputActivity_plus.class);
+                Intent intent = new Intent(getApplicationContext(), InputActivity_single.class);
                 intent.putExtra("operation",intent_operation);
                 intent.putExtra("algorithm",intent_algorithm);
                 intent.putExtra("visible",intent_visible);

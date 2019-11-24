@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InputActivity"></activity>
+        <activity android:name=".InputActivity_mult"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".InputActivity_plus"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".InputActivity_single"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".PastComputeActivity" />
         <activity android:name=".ComputeActivity" />
         <activity android:name=".MainActivity">
@@ -19,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ResultActivity"
+            android:label="Second 액티비티"/>
     </application>
 
 </manifest>
