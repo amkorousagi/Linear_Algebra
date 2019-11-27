@@ -3736,7 +3736,18 @@
         <item> 4</item>
         <item> 5 </item>
         <item> 6 </item>
-    </string-array></file><file name="activity_input_single" path="D:\Linear_Algebra\app\src\main\res\layout\activity_input_single.xml" qualifiers="" type="layout"/></source><source path="D:\Linear_Algebra\app\home\psc\tmp\generated\res\rs\debug"/><source path="D:\Linear_Algebra\app\home\psc\tmp\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Linear_Algebra\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Linear_Algebra\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </string-array></file><file name="activity_input_single" path="D:\Linear_Algebra\app\src\main\res\layout\activity_input_single.xml" qualifiers="" type="layout"/><file name="activity_input_single_power" path="D:\Linear_Algebra\app\src\main\res\layout\activity_input_single_power.xml" qualifiers="" type="layout"/><file path="D:\Linear_Algebra\app\src\main\res\values\power_spinner.xml" qualifiers=""><string-array name="spinnerArray5">
+        <item> 몇 번 거듭제곱할지 고르시오 </item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+    </string-array></file></source><source path="D:\Linear_Algebra\app\home\psc\tmp\generated\res\rs\debug"/><source path="D:\Linear_Algebra\app\home\psc\tmp\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Linear_Algebra\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Linear_Algebra\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

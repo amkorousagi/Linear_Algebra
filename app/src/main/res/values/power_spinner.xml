@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerArray5">
+        <item> 몇 번 거듭제곱할지 고르시오 </item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+    </string-array>
+</resources>

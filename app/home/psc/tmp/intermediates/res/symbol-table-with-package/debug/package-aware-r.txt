@@ -41,6 +41,7 @@ array spinnerArray
 array spinnerArray2
 array spinnerArray3
 array spinnerArray4
+array spinnerArray5
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1306,6 +1307,7 @@ id parent_matrix
 id past_compute
 id percent
 id pin
+id proceed
 id process
 id progress_circular
 id progress_horizontal
@@ -1462,6 +1464,7 @@ layout activity_compute
 layout activity_input_mult
 layout activity_input_plus
 layout activity_input_single
+layout activity_input_single_power
 layout activity_main
 layout activity_past_compute
 layout activity_result

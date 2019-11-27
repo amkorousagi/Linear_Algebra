@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\9ee5da6fca20f6f07dce6c73fc4ca33a\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -38,25 +38,25 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mathn\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:5:5-31:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\9ee5da6fca20f6f07dce6c73fc4ca33a\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\9ee5da6fca20f6f07dce6c73fc4ca33a\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -79,52 +79,58 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ma
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.linearalgebracomputer.InputActivity_mult
+activity#com.example.linearalgebracomputer.InputActivity_single_power
 ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:12:9-13:54
 	android:windowSoftInputMode
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:13:13-52
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:12:19-53
-activity#com.example.linearalgebracomputer.InputActivity_plus
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:12:19-61
+activity#com.example.linearalgebracomputer.InputActivity_mult
 ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:14:9-15:54
 	android:windowSoftInputMode
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:15:13-52
 	android:name
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:14:19-53
-activity#com.example.linearalgebracomputer.InputActivity_single
+activity#com.example.linearalgebracomputer.InputActivity_plus
 ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:16:9-17:54
 	android:windowSoftInputMode
 		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:17:13-52
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:16:19-55
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:16:19-53
+activity#com.example.linearalgebracomputer.InputActivity_single
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:18:9-19:54
+	android:windowSoftInputMode
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:19:13-52
+	android:name
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:18:19-55
 activity#com.example.linearalgebracomputer.PastComputeActivity
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:18:9-57
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:20:9-57
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:18:19-54
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:20:19-54
 activity#com.example.linearalgebracomputer.ComputeActivity
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:19:9-53
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:21:9-53
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:19:19-50
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:21:19-50
 activity#com.example.linearalgebracomputer.MainActivity
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:20:9-26:20
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:20:19-47
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:22:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.example.linearalgebracomputer.ResultActivity
-ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:27:9-28:42
+ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:29:9-30:42
 	android:label
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:28:13-40
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:30:13-40
 	android:name
-		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:27:19-49
+		ADDED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml:29:19-49
 uses-sdk
 INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Linear_Algebra\app\src\main\AndroidManifest.xml

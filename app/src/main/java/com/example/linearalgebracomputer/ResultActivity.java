@@ -19,13 +19,13 @@ public class ResultActivity extends Activity {
             {R.id.e_1, R.id.e_2, R.id.e_3, R.id.e_4, R.id.e_5, R.id.e_6},
             {R.id.f_1, R.id.f_2, R.id.f_3, R.id.f_4, R.id.f_5, R.id.f_6}};
 
-    int[][] matrix_1;
-    int[][] matrix_2;
-    int[][] matrix_result;
+    float[][] matrix_1;
+    float[][] matrix_2;
+    float[][] matrix_result;
     String algorithm, operation;
     int row, col,colb;
-    ArrayList<Integer> matrix = new ArrayList<Integer>();
-    ArrayList<Integer> matrix2 = new ArrayList<Integer>();
+    float[] matrix;
+    float[] matrix2;
 
 
 
@@ -34,57 +34,143 @@ public class ResultActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+
+
         Intent intent = getIntent();
         row = intent.getIntExtra("row", row);
         col = intent.getIntExtra("col", col);
         colb = intent.getIntExtra("colb", colb);
-        matrix = intent.getIntegerArrayListExtra("matrixa");
-        matrix2 = intent.getIntegerArrayListExtra("matrixb");
+        matrix = intent.getFloatArrayExtra("matrixa");
+        matrix2 = intent.getFloatArrayExtra("matrixb");
         algorithm = intent.getStringExtra("algorithm");
         operation = intent.getStringExtra("operation");
 
-        if(algorithm.equals("standard")) {
-            matrix_1 = new int[row][col];
-            matrix_2 = new int[col][colb];
-            matrix_result = new int[row][colb];
+        if(algorithm.equals("standard") && operation.equals("add matrix")) {
+            matrix_1 = new float[row][col];
+            matrix_2 = new float[row][col];
+            matrix_result = new float[row][col];
             int s = 0;
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
-                    matrix_1[i][j] = matrix.get(s++);
+                    matrix_1[i][j] = matrix[i*col+j];
                 }
             }
             s = 0;
-            for (int i = 0; i < col; i++) {
-                for (int j = 0; j < colb; j++) {
-                    matrix_2[i][j] = matrix2.get(s++);
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_2[i][j] = matrix2[i*col+j];
                 }
             }
 
             //matrix_2 : 두번째 행렬
             //matrix_1 : 첫번째 행렬
+            for(int i=0; i<row; i++)
+            {
+                for(int j=0; j<col; j++) {
+                    TextView proceed = (TextView)findViewById(R.id.proceed);
+                    matrix_result[i][j] = matrix_1[i][j] + matrix_2[i][j];
+                    proceed.append("matrix["+(i+1)+"]["+(j+1)+"]= "+matrix_1[i][j]+ " + " + matrix_2[i][j] + " = "+ matrix_result[i][j] + "\n");
 
-            //계산과정
-            int sum = 0;
+                }
+            }
+        }//더하기 계산
+        if(algorithm.equals("A X B") && operation.equals("multiply matrix")) {
+            matrix_1 = new float[row][col];
+            matrix_2 = new float[col][colb];
+            matrix_result = new float[row][colb];
+            int s = 0;
+            float sum;
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_1[i][j] = matrix[i*col+j];
+                }
+            }
+            s = 0;
+            for (int i = 0; i < col; i++) {
+                for (int j = 0; j < colb; j++) {
+                    matrix_2[i][j] = matrix2[i*colb+j];
+                }
+            }
+            //proceed.append("matrix["+(i+1)+"]["+(j+1)+"]= "+matrix_1[i][j]+ " + " + matrix_2[i][j] + " = "+ matrix_result[i][j] + "\n");
+
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < colb; j++) {
+                    TextView proceed = (TextView)findViewById(R.id.proceed);
                     sum = 0;
+                    proceed.append("matrix["+(i+1)+"]["+(j+1)+"]= ");
                     for (s = 0; s < col; s++) {
+                        if( s != 0) {
+                            proceed.append(" + ");
+                        }
+                        sum += matrix_1[i][s] * matrix_2[s][j];
+                        proceed.append("" +matrix_1[i][s]+ "*" + matrix_2[s][j] );
+                    }
+                    proceed.append("= "+sum+"\n");
+                    matrix_result[i][j] = sum;
+
+
+                }
+            }
+            col = colb;
+        }//곱하기 계산
+        if(algorithm.equals("A X A") && operation.equals("multiply matrix")){
+            matrix_1 = new float[row][row];
+            matrix_2 = new float[row][row];
+            matrix_result = new float[row][row];
+            col = row;
+
+            int s = 0;
+            float sum=0;
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < row; j++) {
+                    matrix_1[i][j] = matrix[i*row+j];
+                }
+            }
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < row; j++) {
+                    matrix_2[i][j] = matrix[i*row+j];
+                }
+            }
+
+
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < row; j++) {
+                    sum = 0;
+                    for (s = 0; s < row; s++) {
                         sum += matrix_1[i][s] * matrix_2[s][j];
                     }
                     matrix_result[i][j] = sum;
                 }
             }
+            for(int z = 0; z < colb-2; z++) {
 
+
+                for (int i = 0; i < row; i++) {
+                    for (int j = 0; j < row; j++) {
+                        matrix_1[i][j] = matrix_result[i][j];
+                    }
+                }
+                for (int i = 0; i < row; i++) {
+                    for (int j = 0; j < row; j++) {
+                        sum = 0;
+                        for (s = 0; s < row; s++) {
+                            sum += matrix_1[i][s] * matrix_2[s][j];
+                        }
+                        matrix_result[i][j] = sum;
+                    }
+                }
+
+            }
+        }
 
 
 
         for (int i = 0; i < row; i++) {
-            for(int j = 0; j< colb; j++) {
+            for(int j = 0; j< col; j++) {
                 TextView input = (TextView) findViewById(idNumbers[i][j]);
                 input.setText(""+ matrix_result[i][j]);
             }
         }
-        }//곱하기 계산
 
 
         Button btnReturn = (Button)findViewById(R.id.btnReturn);

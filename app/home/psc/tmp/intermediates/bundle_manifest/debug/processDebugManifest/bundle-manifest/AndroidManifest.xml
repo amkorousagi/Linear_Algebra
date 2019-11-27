@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.linearalgebracomputer.InputActivity_single_power"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name="com.example.linearalgebracomputer.InputActivity_mult"
             android:windowSoftInputMode="adjustPan" />
         <activity

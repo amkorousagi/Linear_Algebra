@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 
 public class InputActivity_single extends AppCompatActivity {
@@ -117,17 +118,17 @@ public class InputActivity_single extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                ArrayList<Integer> matrix = new ArrayList<Integer>();
+                float matrix[] = new float[row*col];
 
                 for (int i = 0; i < row; i++) {
                     for (int j = 0; j < col; j++) {
                         EditText input = (EditText) findViewById(idNumbers[i][j]);
-                        matrix.add(parseInt(input.getText().toString()));
+                        matrix[i*j + j] = parseFloat(input.getText().toString());
                     }
                 }
 
                 Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-                intent.putIntegerArrayListExtra("matrixa", matrix);
+                intent.putExtra("matrixa", matrix);
                 intent.putExtra("row", row);
                 intent.putExtra("col", col);
                 intent.putExtra("operation",operation);

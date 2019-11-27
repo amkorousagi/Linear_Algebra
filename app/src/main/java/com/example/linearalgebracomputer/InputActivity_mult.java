@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 
 public class InputActivity_mult extends AppCompatActivity {
@@ -163,23 +164,25 @@ public class InputActivity_mult extends AppCompatActivity {
 
 
 
-                ArrayList<Integer> matrix = new ArrayList<Integer>();
-                ArrayList<Integer> matrix2 = new ArrayList<Integer>();
+                float matrix[] = new float[row*col];
+                float matrix2[] = new float[col*colb];
 
                 for (int i = 0; i < row; i++) {
-                    for(int j=0; j<col; j++) {
+                    for (int j = 0; j < col; j++) {
                         EditText input = (EditText) findViewById(idNumbers[i][j]);
-                        matrix.add(parseInt(input.getText().toString()));
+                        matrix[i*col + j] = parseFloat(input.getText().toString());
                     }
-                }for (int i = 0; i < col; i++) {
+                }
+
+                for (int i = 0; i < col; i++) {
                     for(int j=0; j<colb; j++) {
                         EditText input = (EditText) findViewById(idNumbers2[i][j]);
-                        matrix2.add(parseInt(input.getText().toString()));
+                        matrix2[i*colb + j] = parseFloat(input.getText().toString());
                     }
                 }
                 Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-                intent.putIntegerArrayListExtra("matrixa", matrix);
-                intent.putIntegerArrayListExtra("matrixb", matrix2);
+                intent.putExtra("matrixa", matrix);
+                intent.putExtra("matrixb", matrix2);
                 intent.putExtra("row", row);
                 intent.putExtra("col", col);
                 intent.putExtra("colb",colb);

@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 
 public class InputActivity_plus extends AppCompatActivity {
@@ -136,24 +137,26 @@ public class InputActivity_plus extends AppCompatActivity {
 
 
 
+                float matrix[] = new float[row*col];
+                float matrix2[] = new float[row*col];
 
-                ArrayList<Integer> matrix = new ArrayList<Integer>();
-                ArrayList<Integer> matrix2 = new ArrayList<Integer>();
+                for (int i = 0; i < row; i++) {
+                    for (int j = 0; j < col; j++) {
+                        EditText input = (EditText) findViewById(idNumbers[i][j]);
+                        matrix[i*col + j] = parseFloat(input.getText().toString());
+                    }
+                }
 
                 for (int i = 0; i < row; i++) {
                     for(int j=0; j<col; j++) {
-                        EditText input = (EditText) findViewById(idNumbers[i][j]);
-                        matrix.add(parseInt(input.getText().toString()));
-                    }
-                }for (int i = 0; i < col; i++) {
-                    for(int j=0; j<colb; j++) {
                         EditText input = (EditText) findViewById(idNumbers2[i][j]);
-                        matrix2.add(parseInt(input.getText().toString()));
+                        matrix2[i*col + j] = parseFloat(input.getText().toString());
                     }
                 }
+
                 Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-                intent.putIntegerArrayListExtra("matrixa", matrix);
-                intent.putIntegerArrayListExtra("matrixb", matrix2);
+                intent.putExtra("matrixa", matrix);
+                intent.putExtra("matrixb", matrix2);
                 intent.putExtra("row", row);
                 intent.putExtra("col", col);
                 intent.putExtra("colb",colb);
