@@ -594,6 +594,7 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
+color Load
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1051,6 +1052,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable linear_image
+drawable matrix_loading
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1465,6 +1467,7 @@ layout activity_input_mult
 layout activity_input_plus
 layout activity_input_single
 layout activity_input_single_power
+layout activity_loading
 layout activity_main
 layout activity_past_compute
 layout activity_result

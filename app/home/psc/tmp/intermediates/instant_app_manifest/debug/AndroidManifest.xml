@@ -33,6 +33,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity android:name="com.example.linearalgebracomputer.PastComputeActivity" />
         <activity android:name="com.example.linearalgebracomputer.ComputeActivity" />
+        <activity android:name="com.example.linearalgebracomputer.Loading" />
         <activity android:name="com.example.linearalgebracomputer.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

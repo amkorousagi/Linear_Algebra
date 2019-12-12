@@ -27,7 +27,7 @@ public class ComputeActivity extends AppCompatActivity {
 
         final Context c = this;
         String[] arr_kinds_operation = {"inverse matrix", "add matrix", "multiply matrix",
-                "Row reduced form matrix", "Eigenvalue & vector matrix", "Determinant matrix", "Transpose matrix", "LU factorization matrix"};
+                "Row reduced form matrix", "Eigenvalue & vector matrix", "Determinant matrix", "Transpose matrix", "LU factorization matrix","Echlen form"};
 
         ArrayAdapter spinnerAdapter_kinds_operation;
         spinnerAdapter_kinds_operation = new ArrayAdapter(c, R.layout.support_simple_spinner_dropdown_item,arr_kinds_operation);
@@ -60,7 +60,10 @@ public class ComputeActivity extends AppCompatActivity {
                         String[] arr_algorithm_used4 = {"Gauss-Jordan elimination"};
                         spinnerAdapter_algorithm_used = new ArrayAdapter(c, R.layout.support_simple_spinner_dropdown_item,arr_algorithm_used4);
                         break;
-
+                    case "Echlen form":
+                        String[] arr_algorithm_used9 = {"Gauss-Jordan elimination"};
+                        spinnerAdapter_algorithm_used = new ArrayAdapter(c, R.layout.support_simple_spinner_dropdown_item,arr_algorithm_used9);
+                        break;
                     case "Eigenvalue & vector matrix":
                         String[] arr_algorithm_used5 = {"standard"};
                         spinnerAdapter_algorithm_used = new ArrayAdapter(c, R.layout.support_simple_spinner_dropdown_item,arr_algorithm_used5);
@@ -186,6 +189,13 @@ public class ComputeActivity extends AppCompatActivity {
                 }
                 //행렬값 만들때
                 if(intent_operation.equals("LU factorization matrix")) {
+                    Intent intent = new Intent(getApplicationContext(), InputActivity_single.class);
+                    intent.putExtra("operation",intent_operation);
+                    intent.putExtra("algorithm",intent_algorithm);
+                    intent.putExtra("visible",intent_visible);
+                    startActivity(intent);
+                }
+                if(intent_operation.equals("Echlen form")) {
                     Intent intent = new Intent(getApplicationContext(), InputActivity_single.class);
                     intent.putExtra("operation",intent_operation);
                     intent.putExtra("algorithm",intent_algorithm);

@@ -3,35 +3,35 @@
 3    package="com.example.linearalgebracomputer.test" >
 4
 5    <uses-sdk
-5-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:5:5-74
+5-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:5:5-74
 6        android:minSdkVersion="15"
-6-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:5:15-41
+6-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:5:42-71
+7-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:5:42-71
 8
 9    <instrumentation
-9-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:11:5-15:83
+9-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:11:5-15:83
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:11:22-76
+10-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:11:22-76
 11        android:functionalTest="false"
-11-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:14:22-52
+11-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:14:22-52
 12        android:handleProfiling="false"
-12-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:13:22-53
+12-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:13:22-53
 13        android:label="Tests for com.example.linearalgebracomputer"
-13-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:15:22-81
+13-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:15:22-81
 14        android:targetPackage="com.example.linearalgebracomputer" />
-14-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:12:22-79
+14-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:12:22-79
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.2.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\ff25c04162ff943dff3292e200c3e8d4\core-1.2.0\AndroidManifest.xml:24:5-72
 16-->[androidx.test:core:1.2.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\ff25c04162ff943dff3292e200c3e8d4\core-1.2.0\AndroidManifest.xml:24:22-69
 17
 18    <application android:debuggable="true" >
-18-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:7:5-9:19
-18-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:7:18-43
+18-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:7:5-9:19
+18-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:7:18-43
 19        <uses-library android:name="android.test.runner" />
-19-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:8:9-60
-19-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger1548024202187225855.xml:8:23-57
+19-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:8:9-60
+19-->D:\Linear_Algebra\app\home\psc\tmp\intermediates\tmp\manifest\androidTest\debug\manifestMerger922329654870203620.xml:8:23-57
 20
 21        <activity
 21-->[androidx.test:core:1.2.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\ff25c04162ff943dff3292e200c3e8d4\core-1.2.0\AndroidManifest.xml:27:9-33:20

@@ -162,6 +162,72 @@ public class ResultActivity extends Activity {
 
             }
         }
+        if(algorithm.equals("Gauss-Jordan elimination") && operation.equals("Row reduced form matrix")){
+            TextView proceed = (TextView)findViewById(R.id.proceed);
+
+            matrix_1 = new float[row][col];
+            matrix_result = new float[row][col];
+            matrix_2 = new float[row][col];
+            int s = 0;
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_1[i][j] = matrix[i*col+j];
+                    proceed.append("" + matrix[i*col+j]+"\n");
+                }
+            }
+
+            s = 0;
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_2[i][j] = 0;
+                }
+            }
+            ReducedEchelonFormSuite rec = new ReducedEchelonFormSuite();
+            rec.EchelonForm(matrix_1, matrix_2);
+
+            for(int i = 0; i < matrix_2.length; i++)
+            {
+                for(int j = 0; j < matrix_2[0].length; j++)
+                    matrix_result[i][j] = matrix_2[i][j];
+            }
+
+            System.out.println();
+            //rec.LowEchelonForm(matrix_1, matrix_2);
+
+
+
+        }
+        if(algorithm.equals("Gauss-Jordan elimination") && operation.equals("Echlen form")){
+            TextView proceed = (TextView)findViewById(R.id.proceed);
+
+            matrix_1 = new float[row][col];
+            matrix_result = new float[row][col];
+            matrix_2 = new float[row][col];
+            int s = 0;
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_1[i][j] = matrix[i*col+j];
+                    proceed.append("" + matrix[i*col+j]+"\n");
+                }
+            }
+
+            s = 0;
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_2[i][j] = 0;
+                }
+            }
+            ReducedEchelonFormSuite rec = new ReducedEchelonFormSuite();
+            rec.LowEchelonForm(matrix_1, matrix_2);
+
+            for(int i = 0; i < matrix_2.length; i++)
+            {
+                for(int j = 0; j < matrix_2[0].length; j++)
+                    matrix_result[i][j] = matrix_2[i][j];
+            }
+
+            System.out.println();
+        }
 
 
 

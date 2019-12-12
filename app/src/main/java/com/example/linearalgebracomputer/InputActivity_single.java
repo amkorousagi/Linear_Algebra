@@ -123,7 +123,7 @@ public class InputActivity_single extends AppCompatActivity {
                 for (int i = 0; i < row; i++) {
                     for (int j = 0; j < col; j++) {
                         EditText input = (EditText) findViewById(idNumbers[i][j]);
-                        matrix[i*j + j] = parseFloat(input.getText().toString());
+                        matrix[i*col + j] = parseFloat(input.getText().toString());
                     }
                 }
 

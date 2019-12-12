@@ -19,7 +19,9 @@
             android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".PastComputeActivity" />
         <activity android:name=".ComputeActivity" />
+        <activity android:name=".Loading"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
