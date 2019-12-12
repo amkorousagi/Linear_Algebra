@@ -126,14 +126,24 @@ public class InputActivity_single extends AppCompatActivity {
                         matrix[i*col + j] = parseFloat(input.getText().toString());
                     }
                 }
-
-                Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-                intent.putExtra("matrixa", matrix);
-                intent.putExtra("row", row);
-                intent.putExtra("col", col);
-                intent.putExtra("operation",operation);
-                intent.putExtra("algorithm",algorithm);
-                startActivity(intent);
+                if(operation.equals("LU factorization matrix")) {
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity2.class);
+                    intent.putExtra("matrixa", matrix);
+                    intent.putExtra("row", row);
+                    intent.putExtra("col", col);
+                    intent.putExtra("operation", operation);
+                    intent.putExtra("algorithm", algorithm);
+                    startActivity(intent);
+                }
+                else {
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    intent.putExtra("matrixa", matrix);
+                    intent.putExtra("row", row);
+                    intent.putExtra("col", col);
+                    intent.putExtra("operation", operation);
+                    intent.putExtra("algorithm", algorithm);
+                    startActivity(intent);
+                }
             }
         });
 

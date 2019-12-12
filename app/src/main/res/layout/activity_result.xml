@@ -17,8 +17,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/left"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,37 +36,38 @@
         android:layout_gravity="center">
         <TextView
             android:id="@+id/a_1"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/asdf"/>
         <TextView
             android:id="@+id/a_2"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/a_3"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/a_4"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/a_5"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/a_6"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
 
@@ -71,38 +82,38 @@
         android:layout_gravity="center">
         <TextView
             android:id="@+id/b_1"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/b_2"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/b_3"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/b_4"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/b_5"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/b_6"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
     </LinearLayout>
@@ -114,38 +125,38 @@
         android:layout_gravity="center">
         <TextView
             android:id="@+id/c_1"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/c_2"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/c_3"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/c_4"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/c_5"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/c_6"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
     </LinearLayout>
@@ -157,38 +168,38 @@
         android:layout_gravity="center">
         <TextView
             android:id="@+id/d_1"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/d_2"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/d_3"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/d_4"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/d_5"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/d_6"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
     </LinearLayout>
@@ -200,38 +211,38 @@
         android:layout_gravity="center">
         <TextView
             android:id="@+id/e_1"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/e_2"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/e_3"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/e_4"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/e_5"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/e_6"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
     </LinearLayout>
@@ -243,41 +254,47 @@
         android:layout_gravity="center">
         <TextView
             android:id="@+id/f_1"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/f_2"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/f_3"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/f_4"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/f_5"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
         <TextView
             android:id="@+id/f_6"
-            android:layout_width="50dp"
-            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
             android:layout_height="wrap_content"
             android:background="@drawable/asdf" />
     </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"/>
+</LinearLayout>
 
 
 

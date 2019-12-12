@@ -43,6 +43,7 @@
         <activity
             android:name="com.example.linearalgebracomputer.ResultActivity"
             android:label="Second 액티비티" />
+        <activity android:name="com.example.linearalgebracomputer.ResultActivity2" />
     </application>
 
 </manifest>

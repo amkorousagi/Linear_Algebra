@@ -11,7 +11,7 @@
 9-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:5:5-33:19
+11-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:5:5-34:19
 12        android:allowBackup="true"
 12-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -81,6 +81,9 @@
 44-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:31:19-49
 45            android:label="Second 액티비티" />
 45-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:32:13-40
-46    </application>
-47
-48</manifest>
+46        <activity android:name="com.example.linearalgebracomputer.ResultActivity2" />
+46-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:33:9-52
+46-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:33:19-50
+47    </application>
+48
+49</manifest>

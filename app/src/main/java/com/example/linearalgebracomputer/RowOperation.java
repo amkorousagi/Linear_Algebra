@@ -1,7 +1,11 @@
 package com.example.linearalgebracomputer;
 
-public class RowOperation {
-	
+import android.app.Activity;
+import android.widget.TextView;
+
+
+public class RowOperation extends Activity {
+
 	static public void Interchange(float[][] R, int row1, int row2)
 	{
 		float[] temp = R[row1];
