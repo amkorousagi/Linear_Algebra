@@ -1,7 +1,13 @@
 package com.example.linearalgebracomputer;
 
+import android.content.Context;
+
+import java.io.IOException;
+
+
 public class ReducedEchelonFormSuite	//������ : row * col ���� row > col�� ��, ��� �ȵ�
 {
+
 	public void LowEchelonForm(float[][] A, float[][] R)
 	{
 		EchelonForm(A, R);
@@ -14,11 +20,19 @@ public class ReducedEchelonFormSuite	//������ : row * col ����
 			
 			if(col == R[0].length)
 				continue;
-			
+
+
+
+			writeclass.Output("row"+(row+1)+" divided by " + R[row][col]+"\n");
 			RowOperation.MultipleRow(R, row, 1 / R[row][col]);
+			writeclass.Output(R);
+
 			
-			for(i = row - 1; i >= 0; i--)			
+			for(i = row - 1; i >= 0; i--) {
+				writeclass.Output("row"+(row+1)+" multiple by " + -1 * R[i][col] + " and added to row" + (i+1) +"\n");
 				RowOperation.MultipleAndAddition(R, row, i, -1 * R[i][col]);
+				writeclass.Output(R);
+			}
 		}
 	}
 	
@@ -44,23 +58,31 @@ public class ReducedEchelonFormSuite	//������ : row * col ����
 						if(R[i][j] % d != 0)
 							break;
 					
-					if(j == R[0].length) {					
-						RowOperation.MultipleRow(R, i, 1 / (float)d);					
+					if(j == R[0].length) {
+						writeclass.Output("row"+(i+1)+" divided by " + (float)d+"\n");
+						RowOperation.MultipleRow(R, i, 1 / (float)d);
+						writeclass.Output(R);
 						min /= d;	d = 1;
 					}				
 				}
 			}
 			
-			for(i = row + 1; i < R.length && R[row][col] == 0; i++)	//����� ���� col��° ���� 0�� ��, 0�� �ƴ� ��� ��ü		
-				RowOperation.Interchange(R, row, i);					
+			for(i = row + 1; i < R.length && R[row][col] == 0; i++) {//����� ���� col��° ���� 0�� ��, 0�� �ƴ� ��� ��ü
+				writeclass.Output("interchange row" + (row + 1) + " and row " + (i + 1) +"\n");
+				RowOperation.Interchange(R, row, i);
+				writeclass.Output(R);
+			}
 			
 			if(i == R.length && i != row + 1) {	//��� ���� col��° ���� 0�� ��, col++
 				row--;
 				continue;
 			}			
 			
-			for(i = row + 1; i < R.length; i++)			
-				RowOperation.MultipleAndAddition(R, row, i, -1 * R[i][col] / R[row][col]);			
+			for(i = row + 1; i < R.length; i++) {
+				writeclass.Output("row"+(row+1)+" multiple by " + -1 * R[i][col] / R[row][col] + " and added to row" + (i+1) +"\n");
+				RowOperation.MultipleAndAddition(R, row, i, -1 * R[i][col] / R[row][col]);
+				writeclass.Output(R);
+			}
 		}
 	}	
 	

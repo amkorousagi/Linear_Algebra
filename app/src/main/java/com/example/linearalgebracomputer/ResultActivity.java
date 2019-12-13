@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ResultActivity extends Activity {
@@ -73,7 +75,7 @@ public class ResultActivity extends Activity {
 
                 }
             }
-        }//더하기 계산
+        }//더하기 계산//과정 완료
         if(algorithm.equals("A X B") && operation.equals("multiply matrix")) {
             matrix_1 = new float[row][col];
             matrix_2 = new float[col][colb];
@@ -112,7 +114,7 @@ public class ResultActivity extends Activity {
                 }
             }
             col = colb;
-        }//곱하기 계산
+        }//곱하기 계산//과정 완료
         if(algorithm.equals("A X A") && operation.equals("multiply matrix")){
             matrix_1 = new float[row][row];
             matrix_2 = new float[row][row];
@@ -172,7 +174,6 @@ public class ResultActivity extends Activity {
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
                     matrix_1[i][j] = matrix[i*col+j];
-                    proceed.append("" + matrix[i*col+j]+"\n");
                 }
             }
 
@@ -193,10 +194,15 @@ public class ResultActivity extends Activity {
 
             System.out.println();
             //rec.LowEchelonForm(matrix_1, matrix_2);
+            new writeclass().close();
+            new readclass().init();
+            String store = readclass.Input();
+            new readclass().close();
+            proceed.append(""+ store + "\n");
 
 
 
-        }
+        } //과정 완료
         if(algorithm.equals("Gauss-Jordan elimination") && operation.equals("Echlen form")){
             TextView proceed = (TextView)findViewById(R.id.proceed);
 
@@ -207,7 +213,6 @@ public class ResultActivity extends Activity {
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
                     matrix_1[i][j] = matrix[i*col+j];
-                    proceed.append("" + matrix[i*col+j]+"\n");
                 }
             }
 
@@ -227,7 +232,75 @@ public class ResultActivity extends Activity {
             }
 
             System.out.println();
+            new writeclass().close();
+            new readclass().init();
+            String store = readclass.Input();
+            new readclass().close();
+            proceed.append(""+ store + "\n");
+        }//과정 완료
+        if(algorithm.equals("Gauss-Jordan elimination") && operation.equals("inverse matrix")){
+            TextView proceed = (TextView)findViewById(R.id.proceed);
+
+            matrix_1 = new float[row][col];
+            matrix_result = new float[row][col];
+            matrix_2 = new float[row][col];
+
+            /*
+            FileWriter fw = new FileWriter("file.txt") ;
+            BufferedWriter bufwr = new BufferedWriter(fw) ;
+            */
+
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_1[i][j] = matrix[i*col+j];
+                    proceed.append("A["+(i+1)+"]["+(j+1)+"] = " + matrix[i*col+j]+"\n");
+                }
+            }
+            InverseMatrixSuite ims = new InverseMatrixSuite();
+            ims.GetInverse(matrix_1, matrix_result);
+
         }
+        if(algorithm.equals("standard") && operation.equals("Determinant matrix")){
+            matrix_1 = new float[row][col];
+            matrix_result = new float[row][col];
+            float det;
+            TextView proceed = (TextView)findViewById(R.id.proceed);
+
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_1[i][j] = matrix[i*col+j];
+                }
+            }
+            DeterminantSuite ds = new DeterminantSuite();
+            det = ds.GetDeterminant(matrix_1);
+            proceed.append(""+det);
+        }
+        if(algorithm.equals("standard") && operation.equals("Transpose matrix")){
+            matrix_1 = new float[row][col];
+            matrix_result = new float[col][row];
+
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix_1[i][j] = matrix[i*col+j];
+                }
+            }
+
+            for(int i=0; i<row; i++)
+            {
+                for(int j=0; j<col; j++) {
+                    TextView proceed = (TextView)findViewById(R.id.proceed);
+                    matrix_result[j][i] = matrix_1[i][j];
+                    proceed.append("matrix["+(j+1)+"]["+(i+1)+"]= "+"original_matrix["+(i+1)+"]["+(j+1)+"]= "+matrix_1[i][j]+ "\n");
+
+                }
+            }
+            int tmp;
+            tmp = col;
+            col = row;
+            row = tmp;
+
+
+        }//과정 완료
 
 
 

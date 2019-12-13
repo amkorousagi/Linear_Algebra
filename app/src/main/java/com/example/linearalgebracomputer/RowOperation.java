@@ -1,10 +1,14 @@
 package com.example.linearalgebracomputer;
 
 import android.app.Activity;
+import android.content.Context;
 import android.widget.TextView;
+
+import java.io.FileOutputStream;
 
 
 public class RowOperation extends Activity {
+
 
 	static public void Interchange(float[][] R, int row1, int row2)
 	{

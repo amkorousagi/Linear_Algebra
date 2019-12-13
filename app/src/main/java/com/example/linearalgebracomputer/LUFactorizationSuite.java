@@ -27,7 +27,7 @@ public class LUFactorizationSuite {
 		for(row = col = lcol = 0; row < U.length && col < U[0].length; row++, col++)
 		{			
 			for(i = row + 1; i < U.length && U[row][col] == 0; i++)
-				RowOperation.Interchange(U, row, i);		
+				RowOperation.Interchange(U, row, i);
 			
 			if(i == U.length && i != row + 1) {
 				row--;
