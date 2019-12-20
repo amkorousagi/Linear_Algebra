@@ -1,0 +1,81 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.linearalgebracomputer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:5:5-31:19
+12        android:allowBackup="true"
+12-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\mathn\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:icon="@mipmap/ic_launcher"
+14-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:7:9-43
+15        android:label="@string/app_name"
+15-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:8:9-41
+16        android:roundIcon="@mipmap/ic_launcher_round"
+16-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:9:9-54
+17        android:supportsRtl="true"
+17-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:10:9-35
+18        android:theme="@style/AppTheme" >
+18-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:11:9-40
+19        <activity
+19-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:12:9-13:54
+20            android:name="com.example.linearalgebracomputer.InputActivity_single_power"
+20-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:12:19-61
+21            android:windowSoftInputMode="adjustPan" />
+21-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:13:13-52
+22        <activity
+22-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:14:9-15:54
+23            android:name="com.example.linearalgebracomputer.InputActivity_mult"
+23-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:14:19-53
+24            android:windowSoftInputMode="adjustPan" />
+24-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:15:13-52
+25        <activity
+25-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:16:9-17:54
+26            android:name="com.example.linearalgebracomputer.InputActivity_plus"
+26-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:16:19-53
+27            android:windowSoftInputMode="adjustPan" />
+27-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:17:13-52
+28        <activity
+28-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:18:9-19:54
+29            android:name="com.example.linearalgebracomputer.InputActivity_single"
+29-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:18:19-55
+30            android:windowSoftInputMode="adjustPan" />
+30-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:19:13-52
+31        <activity android:name="com.example.linearalgebracomputer.PastComputeActivity" />
+31-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:20:9-57
+31-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:20:19-54
+32        <activity android:name="com.example.linearalgebracomputer.ComputeActivity" />
+32-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:21:9-53
+32-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:21:19-50
+33        <activity android:name="com.example.linearalgebracomputer.MainActivity" >
+33-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:22:9-28:20
+33-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:22:19-47
+34            <intent-filter>
+34-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:23:13-27:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:24:17-69
+35-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:24:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:26:17-77
+37-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:26:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:29:9-30:42
+41            android:name="com.example.linearalgebracomputer.ResultActivity"
+41-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:29:19-49
+42            android:label="Second 액티비티" />
+42-->D:\Linear_Algebra\app\src\main\AndroidManifest.xml:30:13-40
+43    </application>
+44
+45</manifest>

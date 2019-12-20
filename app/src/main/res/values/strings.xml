@@ -1,4 +1,4 @@
-<resources>
+        <resources>
     <string name="app_name">LinearAlgebraComputer</string>
     <string name="hint1_11">hint</string>
     <string name="linear_algebra">this is linear algebra image</string>
